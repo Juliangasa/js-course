@@ -20,7 +20,11 @@ console.log(`Cart quantity: ${cartQuantity}`);
    <button onclick="cartQuantity=cartQuantity+3;
    console.log(`Cart quantity: ${cartQuantity}`)">
    +3</button>
-   <button>Reset cart</button>
+   <button onclick="
+   cartQuantity=0;
+   console.log('Cart was reset.');
+   console.log(`Cart quantity: ${cartQuantity}`);
+   ">Reset cart</button>
 
     <script>
     let cartQuantity= 0;    
