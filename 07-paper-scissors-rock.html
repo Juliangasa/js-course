@@ -6,7 +6,7 @@
 <body>
     <p>Rock Paper Scissors</p>
     <button onclick="
-    pickComputerMove();
+    console.log(pickComputerMove());
     let result = '';
     if (computerMove === 'rock'){
         result = 'Tie';
@@ -19,7 +19,7 @@
     ">Rock
     </button>
     <button onclick="
-    pickComputerMove();
+    console.log(pickComputerMove());
     let result = '';
     if (computerMove === 'rock'){
         result = 'You win'; 
@@ -54,8 +54,7 @@
     } else if (randomNumber >= 2/3 && randomNumber < 1){
         computerMove = 'scissors';
     }
-    return;
-    console.log('after');
+    return computerMove;
         }   
     </script>
 </body>
