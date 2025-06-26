@@ -10,14 +10,16 @@
     <button onclick="playGame('scissors');">
     Scissors</button>
     <button onclick="playGame('rock');">
-        Rock
+    Rock
     </button>
     <script>
    function playGame(playerMove){
     const computerMove = pickComputerMove();
     let result = '';
-    if (player === 'scissors'){
-        if ()
+    if (playerMove === 'scissors'){
+        if (computerMove === 'rock'){
+            result = 'You lose'
+        }
     }
    }
     </script>
