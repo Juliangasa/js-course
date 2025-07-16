@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Booleans</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booleans</title>
+    </head>
+    <body>
+        <script>
+            /*
+            // Basic boolean values
+            true
+            false
+            console.log(3 > 5 - 5);
+            console.log(5 === '5.00');
+            
+            // Basic if-else structure
+            if (false) {
+                console.log('hello');
+            } else {
+                console.log('else');
+            }
 
-<body>
-    <script>
-        /*
-        true
-        false
-        console.log(3 > 5 - 5);
-        console.log(5 === '5.00');
-        if (false) {
-            console.log('hello');
-        } else {
-            console.log('else');
-        }
+            // Age-based conditional logic
+            const age = 10;
 
-        const age = 10;
-
-        if (age >= 13) {
-            console.log('You can drive');
-            console.log('Congrats');
-        } else if (age>=7){
-            console.log('Almost there!')
-        } else {
-            console.log('You can not drive');
-        }
+            if (age >= 13) {
+                console.log('You can drive');
+                console.log('Congrats');
+            } else if (age >= 7) {
+                console.log('Almost there!');
+            } else {
+                console.log('You can not drive');
+            }
             */
-           /*
-if (9){
-    console.log('truthy');
-}
 
-const cartQuantity = 25;
-if (cartQuantity){
-    console.log('cart has products');
-}
+            /*
+            // Truthy and falsy values
+            if (9) {
+                console.log('truthy');
+            }
 
-console.log('text'/5);
+            const cartQuantity = 25;
+            if (cartQuantity) {
+                console.log('cart has products');
+            }
 
-let variable1;
-console.log(variable1);
+            console.log('text' / 5);
 
-const variable2  = undefined;
-console.log(variable2);
-*/
+            let variable1;
+            console.log(variable1);
 
-const result = true ? 'truthy' : 'falsy';
-console.log(result);
+            const variable2 = undefined;
+            console.log(variable2);
+            */
 
-5 && console.log('hello');
+            // Ternary operator example
+            const result = true ? 'truthy' : 'falsy';
+            console.log(result);
 
-const message = 7 && 'banana';
-console.log(message);
+            // Logical AND operator
+            5 && console.log('hello');
 
-const currency = undefined || 'USD';
-console.log(currency);
-    </script>
-</body>
+            const message = 7 && 'banana';
+            console.log(message);
+
+            // Logical OR operator
+            const currency = undefined || 'USD';
+            console.log(currency);
+        </script>
+    </body>
 </html>
