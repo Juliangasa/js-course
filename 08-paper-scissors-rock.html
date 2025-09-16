@@ -65,7 +65,10 @@
 
                 if (result === 'You win'){
                     score.wins += 1;
+                } else if (result === 'You lose'){
+                    score.losses += 1;
                 }
+                
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
