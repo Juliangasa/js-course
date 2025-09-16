@@ -62,6 +62,10 @@
                         result = 'You win';
                     }
                 }
+
+                if (result === 'You win'){
+                    score.wins += 1;
+                }
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
