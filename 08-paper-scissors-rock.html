@@ -21,6 +21,12 @@
             Rock
         </button>
 
+        <button onclick="
+        score.wins= 0;
+        score.losses= 0;
+        score.ties= 0;
+        ">Reset Score</button>
+
         <script>
             const score = {
                 wins: 0,
@@ -74,7 +80,7 @@
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
-                Wins: ${score.wins}, Lossess: ${score.lossess}, Ties: ${score.ties}`);
+Wins: ${score.wins}, Lossess: ${score.losses}, Ties: ${score.ties}`);
             }
 
             // Function to pick computer's move randomly
