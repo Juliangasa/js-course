@@ -33,6 +33,7 @@
                 losses: 0,
                 ties: 0
             };
+            console.log(localStorage.getItem('message'));
             // Main game function
             function playGame(playerMove) {
                 const computerMove = pickComputerMove();
@@ -77,6 +78,7 @@
                     score.ties += 1;
                 }
                 
+                localStorage.setItem('message', 'hello');
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
