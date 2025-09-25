@@ -28,12 +28,8 @@
         ">Reset Score</button>
 
         <script>
-            const score = {
-                wins: 0,
-                losses: 0,
-                ties: 0
-            };
-            console.log(localStorage.getItem('message'));
+            const score = 
+                JSON.parse(localStorage.getItem('score'));
             // Main game function
             function playGame(playerMove) {
                 const computerMove = pickComputerMove();
@@ -78,7 +74,7 @@
                     score.ties += 1;
                 }
                 
-                localStorage.setItem('message', 'hello');
+                localStorage.setItem('score', JSON.stringify(score));
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
