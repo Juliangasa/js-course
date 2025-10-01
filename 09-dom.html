@@ -2,16 +2,35 @@
 <html>
     <head>
         <title>DOM</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-weight: normal;
+            }
+            button {
+                font-weight: normal;
+                padding: 8px 16px;
+                margin: 4px;
+            }
+        </style>
     </head>
 <body>
   <button>hello</button>
     <script>
+      console.log(document.querySelector('button'));
+      /*
       console.log(document.title);
       document.title = 'changed';
       console.log(document.body);
       console.log(typeof document.body);
       console.log(document.body.innerHTML);
+      // Option A: Replace everything (current approach)
       document.body.innerHTML = '<button>More Info</button>';
+      
+      // Option B: Add new button without removing existing content
+      // const newButton = document.createElement('button');
+      // newButton.textContent = 'More Info';
+      // document.body.appendChild(newButton);
       /*
       document.body.innerHTML = 'hello';
       document.title = 'Good news';
