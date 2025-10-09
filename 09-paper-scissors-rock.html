@@ -20,10 +20,10 @@
         <button onclick="playGame('rock');">
             Rock
         </button>
-        <p class="js-result"></p>
         <p class="js-moves"></p>
+        <p class="js-result"></p>
         <p class="js-score"></p>
-        
+
         <button onclick="
         score.wins= 0;
         score.losses= 0;
@@ -97,8 +97,10 @@
                updateScoreElement();
                 
                 // Display the result
-                alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+                document.querySelector('.js-moves').innerHTML =
+                `You ${playerMove} | Computer ${computerMove}`;
+                
+                document.querySelector('.js-result').innerHTML = result;
             }
 
             function updateScoreElement(){
