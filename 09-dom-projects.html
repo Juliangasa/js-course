@@ -9,9 +9,13 @@
       class="js-subs-btn">
       Subscribe</button>
       <p>Amazon Shipping Calculator</p>
-      <input placeholder="Cost of order">
-      <button>Calculate</button>
+      <input class="js-cost-input" placeholder="Cost of order">
+      <button onclick="calculateTotal()">
+        Calculate</button>
     <script>
+      function calculateTotal(){
+        console.log(document.querySelector('.js-cost-input'));
+      }
     function subscribe(){
       const btnElement = document.querySelector('.js-subs-btn'); if (btnElement.innerText === 'Subscribe'){
           btnElement.innerHTML = 'Subscribed';
