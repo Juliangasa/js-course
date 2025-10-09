@@ -92,11 +92,15 @@
                 }
                 
                 localStorage.setItem('score', JSON.stringify(score));
-                document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+               updateScoreElement();
                 
                 // Display the result
                 alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result} 
 Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+            }
+
+            function updateScoreElement(){
+            document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
             }
 
             // Function to pick computer's move randomly
