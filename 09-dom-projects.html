@@ -12,10 +12,16 @@
       <input class="js-cost-input" placeholder="Cost of order">
       <button onclick="calculateTotal()">
         Calculate</button>
+        <p class="js-total-cost"></p>
     <script>
       function calculateTotal(){
         const inputElement = (document.querySelector('.js-cost-input'));
         let cost = inputElement.value;
+        console.log(cost);
+        if (cost < 50){
+          cost = cost + 10;
+        }
+        document.querySelector('.js-total-cost').innerHTML = `$ ${cost}`;
       }
     function subscribe(){
       const btnElement = document.querySelector('.js-subs-btn'); if (btnElement.innerText === 'Subscribe'){
