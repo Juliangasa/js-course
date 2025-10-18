@@ -2,16 +2,40 @@
 <html>
     <head>
         <title>DOM Projects</title>
+        <style>
+          .subs-btn{
+            border: none;
+            font-size: large;
+            background-color: blue;
+            color: white;
+            border-color:black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: calc(infinity * 1px);
+            padding: 15px;
+          }
+          .calc-btn{
+            border: none;
+            font-size: large;
+            background-color: blue;
+            border-color:black;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: calc(infinity * 1px);
+            padding: 15px;
+          }
+        </style>
     </head>
 <body>
   <h3>Youtube Subscribe Button</h3>
     <button onclick = "subscribe ()"
-      class="js-subs-btn">
+      class="js-subs-btn subs-btn">
       Subscribe</button>
       <p>Amazon Shipping Calculator</p>
       <input class="js-cost-input" placeholder="Cost of order" onkeydown="
       handleCostKeyTyped(event)">
-      <button onclick="calculateTotal()">
+      <button class="calc-btn" onclick="calculateTotal()">
         Calculate</button>
         <p class="js-total-cost"></p>
     <script>
