@@ -11,8 +11,9 @@
             border-color:black;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
-            border-radius: calc(infinity * 1px);
+            border-radius: 50px;
             padding: 15px;
+            cursor: pointer;
           }
           .calc-btn{
             border: none;
@@ -22,8 +23,13 @@
             color: white;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
-            border-radius: calc(infinity * 1px);
+            border-radius: 50px;
             padding: 15px;
+            cursor: pointer;
+          }
+          .is-subscribed{
+            background-color: slategray;
+            color: black;
           }
         </style>
     </head>
@@ -53,8 +59,10 @@
         document.querySelector('.js-total-cost').innerHTML = `$ ${cost}`;
       }
     function subscribe(){
-      const btnElement = document.querySelector('.js-subs-btn'); if (btnElement.innerText === 'Subscribe'){
+      const btnElement = document.querySelector('.js-subs-btn'); 
+      if (btnElement.innerText === 'Subscribe'){
           btnElement.innerHTML = 'Subscribed';
+          btnElement.classList.add('is-subscribed');
         } else{
           btnElement.innerHTML = 'Subscribe';
     }
